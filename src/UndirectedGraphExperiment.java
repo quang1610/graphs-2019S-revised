@@ -22,7 +22,7 @@ public class UndirectedGraphExperiment {
 
     // Remove a vertex
     pen.println("Removing b");
-    g.removeVertex("b");
+    //g.removeVertex("b");
     g.dumpWithNames(pen);
     
     // Add another vertex
@@ -32,8 +32,11 @@ public class UndirectedGraphExperiment {
     
     // Remove an edge
     pen.println("Removing the edge from c to a");
-    g.removeEdge("c", "a");
+    //g.removeEdge("c", "a");
     g.dumpWithNames(pen);
+    
+    Graph mst = g.createMST();
+    mst.dumpWithNames(pen);
   } // main(String[])
 
 } // class UndirectedGraphExperiment

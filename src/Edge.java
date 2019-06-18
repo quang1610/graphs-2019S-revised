@@ -4,7 +4,7 @@
  *
  * @author Samuel A. Rebelsky
  */
-public class Edge {
+public class Edge implements Comparable<Edge>{
 
   // +--------+------------------------------------------------------
   // | Fields |
@@ -89,4 +89,9 @@ public class Edge {
       return this.weight;
     } // if/else
   } // weight()
+  
+  @Override
+  public int compareTo(Edge other) {
+	  return this.weight() - other.weight();
+  }
 } // class Edge

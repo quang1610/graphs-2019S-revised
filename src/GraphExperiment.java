@@ -57,7 +57,7 @@ public class GraphExperiment {
     g.dump(pen);
     
     // Remove an edge
-    g.removeEdge("a", "c");
+    //g.removeEdge("a", "c");
     g.dump(pen);
   } // main(String[])
 
